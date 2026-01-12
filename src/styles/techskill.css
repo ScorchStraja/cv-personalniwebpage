@@ -1,0 +1,62 @@
+.tech_skill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    justify-content: center;
+    line-height: 1;
+
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-md);
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+
+    color: var(--text);
+    transition:
+        background-color 2s ease,
+        color 2s ease,
+        transform 0.15s ease;
+
+    text-decoration: none;
+}
+
+.tech_skill:hover {
+    background: var(--tech-hover, var(--accent));
+    color: var(--tech-hover-text, var(--text));
+    transform: scale(1.03);
+
+    transition:
+        background-color 0.12s ease,
+        color 0.12s ease,
+        transform 0.15s ease;
+}
+
+.tech_skill_icon {
+    font-size: var(--text-lg);
+    padding-top: var(--space-1);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate_icon svg {
+  animation: spin 6s linear infinite;
+}
+
+.tech_skill_name {
+    font-size: var(--text-md);
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tech_skill {
+        transition: none;
+    }
+}

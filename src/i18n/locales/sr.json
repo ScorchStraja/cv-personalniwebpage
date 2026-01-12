@@ -1,0 +1,23 @@
+{
+  "about": {
+    "ime": "Strahinja Каrać",
+    "titula": "Master Inženjer Elektrotehnike i Računarstva",
+    "kratkiOpis": "Master inženjer elektrotehnike i računarstva sa iskustvom u razvoju softvera i dizajnu korisničkih interfejsa."
+  },
+  "intro":{
+    "paragraph1": "Master sam inženjer elektrotehnike i računarstva sa snažnim interesovanjem za izgradnju dobro strukturiranih softverskih sistema i pažljivo osmišljenih korisničkih interfejsa. Uživanjem smatram rad i na frontend i na backend strani, uz fokus na rešenja koja su pouzdana, jasna i pažljivo projektovana od početka do kraja.",
+    "paragraph2": "Dosadašnje obrazovanje i iskustvo oblikovali su u meni metodičan pristup rešavanju problema, sa naglaskom na strukturu, održivost i dugoročnu jasnoću. Komforno radim i na klijentskoj i na serverskoj strani i volim da razumem kako sistemi funkcionišu kao celina — od podataka i logike do interfejsa i interakcije.",
+    "paragraph3": "Posebno me privlače projekti u kojima se inženjerska disciplina susreće sa čistim, promišljenim dizajnom. Bilo da radim na aplikacionoj logici, API-jima ili korisničkim interfejsima, cenim doslednost, performanse i pažnju prema detaljima.",
+    "paragraph4": "Van posla, uživam u boravku napolju, u šetnji i kreativnim interesovanjima poput crtanja, muzike i 3D modelovanja. Cenim kontinuirano učenje, zanatski pristup radu i izgradnju stvari sa pažnjom."
+  },
+  "CV":{
+    "download": "Preuzmi",
+    "view": "Pogledaj"
+  },
+  "Skills":{
+    "naslov":"Tehnička stručnost"
+  },
+  "Contact":{
+    "naslov":"Kontakt"
+  }
+}

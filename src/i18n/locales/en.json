@@ -1,0 +1,23 @@
+{
+  "about": {
+    "ime": "Strahinja Karać",
+    "titula": "Master Engineer in Electrical Engineering and Computer Science",
+    "kratkiOpis": "Master engineer in electrical engineering and computer science with experience in software development and user interface design."
+  },
+  "intro":{
+    "paragraph1": "I’m a master engineer in electrical engineering and computer science with a strong interest in building well-structured software systems and thoughtfully designed user interfaces. I enjoy working across both frontend and backend, focusing on solutions that are reliable, clear, and carefully engineered from end to end.",
+    "paragraph2": "My background has shaped a methodical approach to problem-solving, with an emphasis on structure, maintainability, and long-term clarity. I work comfortably with both client-side and server-side development, and I enjoy understanding how systems function as a whole — from data and logic to interface and interaction.",
+    "paragraph3": "I’m particularly drawn to projects where engineering discipline meets clean, intentional design. Whether I’m working on application logic, APIs, or user-facing interfaces, I value consistency, performance, and attention to detail.",
+    "paragraph4": "Outside of work, I enjoy spending time outdoors, walking, and exploring creative interests such as drawing, music, and 3D modeling. I value continuous learning, craftsmanship, and building things with care."
+  },
+  "CV":{
+    "download": "Download",
+    "view": "View"
+  },
+  "Skills":{
+    "naslov":"Technical Expertise"
+  },
+  "Contact":{
+    "naslov":"Contact"
+  }
+}

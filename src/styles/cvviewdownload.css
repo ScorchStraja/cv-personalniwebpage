@@ -1,0 +1,32 @@
+.cv_actions {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-5);
+  background: var(--surface);
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+
+  overflow: hidden;
+}
+
+.cv_btn{
+  color: var(--muted);
+  text-decoration: none;
+  transition: transform 80ms ease, color 160ms ease;
+}
+
+.cv_btn:hover{
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .cv_btn {
+    transition: none;
+  }
+}

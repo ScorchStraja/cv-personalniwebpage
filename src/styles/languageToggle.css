@@ -1,0 +1,95 @@
+.langToggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  width: 100px;
+  border-radius: var(--radius-md);
+  padding: var(--space-1);
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+
+  overflow: hidden;
+}
+
+.langToggle_slider {
+  position: absolute;
+  top: var(--space-1);
+  left: var(--space-1);
+
+  width: calc(50% - var(--space-1));
+  height: calc(100% - (var(--space-1) * 2));
+
+  background: var(--accent-bg);
+  border-radius: var(--radius-sm);
+
+  transform: translateX(0%);
+  transition: transform 220ms ease;
+  z-index: 0;
+}
+
+.langToggle.is-sr .langToggle_slider {
+  transform: translateX(100%);
+}
+
+.langToggle_btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  width: 50%;
+
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-regular);
+
+  color: var(--muted);
+
+
+  cursor: pointer;
+  user-select: none;
+
+  position: relative;
+  z-index: 1;
+
+  transition: color 160ms ease, transform 80ms ease;
+}
+
+.langToggle_btn:first-child {
+  border-top-left-radius: var(--radius-sm);
+  border-bottom-left-radius: var(--radius-sm);
+}
+
+.langToggle_btn:last-child {
+  border-top-right-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+}
+
+.langToggle_btn:hover {
+  color: var(--text);
+}
+
+.langToggle_btn:active {
+  transform: translateY(1px);
+}
+
+.langToggle_btn.is-active {
+  color: var(--text);
+  font-weight: var(--weight-semibold);
+}
+
+.langToggle_btn:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .langToggle_slider {
+    transition: none;
+  }
+  .langToggle_btn {
+    transition: none;
+  }
+}

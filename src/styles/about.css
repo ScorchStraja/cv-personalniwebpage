@@ -1,0 +1,128 @@
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.about_top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.about_bottom {
+  margin-top: auto; 
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.about_header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.about_photoWrap {
+  width: 100%;
+  height: 220px;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: var(--space-2);
+  background: transparent;
+  isolation: isolate;
+}
+
+.about_photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+
+  -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 0) 89%);
+
+  -webkit-mask-size: 100% 110%;
+  mask-size: 100% 110%;
+  -webkit-mask-position: top;
+  mask-position: top;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.about_socials {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.about_socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  color: var(--muted);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    transform 120ms ease,
+    box-shadow 160ms ease;
+}
+
+.about_socials a:hover {
+  color: var(--text);
+  background: var(--accent-bg);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.about_socials a:active {
+  transform: translateY(0);
+}
+
+.about_socials a:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+@media (max-width: 900px) {
+  .about_photoWrap {
+    height: 200px;
+    margin-bottom: var(--space-1);
+  }
+
+  .about_photo {
+    object-position: center 10%;
+    transform: scale(1.5);
+
+    -webkit-mask-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 30%,
+        rgba(0, 0, 0, 0) 80%);
+
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+}

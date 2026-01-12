@@ -1,0 +1,55 @@
+:root {
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Source Sans Pro", sans-serif;
+
+  --bg: #0b0f19;
+  --surface: #111827;
+  --text: #e5e7eb;
+  --border: rgba(229, 231, 235, 0.12);
+  --muted: #9ca3af;
+  --accent: #7c3aed;
+  --accent-bg: color-mix(in srgb, var(--accent) 50%, transparent);
+  --hover-bg: rgba(229, 231, 235, 0.06);
+  --glow-1: color-mix(in srgb, var(--accent) 18%, transparent);
+  --glow-2: color-mix(in srgb, var(--accent) 8%, transparent);
+  --page-gradient:
+    radial-gradient(900px 600px at 15% 10%,
+      color-mix(in srgb, var(--accent-bg) 16%, transparent),
+      transparent 70%),
+    radial-gradient(700px 500px at 85% 20%,
+      color-mix(in srgb, var(--accent-bg) 10%, transparent),
+      transparent 72%),
+    radial-gradient(900px 650px at 55% 105%,
+      color-mix(in srgb, var(--accent-bg) 8%, transparent),
+      transparent 75%);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  --maxw: 1200px;
+
+  --text-sm: 0.875rem;
+  --text-md: 1.05rem;
+  --text-lg: 1.4rem;
+  --text-ext-lg: 2.5rem;
+
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+
+  --focus-ring: 2px solid var(--accent);
+  --focus-offset: 2px;
+
+  --cursor-x: 50%;
+  --cursor-y: 50%;
+}
