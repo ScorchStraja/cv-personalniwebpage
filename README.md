@@ -9,5 +9,5 @@ Sta jos treba da uradim:
 8. Ispod titule i opisa kratkog, dodati mail, adresu?
 9. Dodati ispod titule i kratkog opisa linkove za auto scroll?
 10. Pogledati/pitati chatgpt da li bi trebao da dodam mozda jos neki gimmick ili slicno?
-11. Napravi da na netlify radi skidanje cv-a.
+11. ~~Napravi da na netlify radi skidanje cv-a.~~
 12. ~~Promeni sliku na tabu.~~

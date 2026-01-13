@@ -38,18 +38,16 @@ export default function Contact() {
     try {
       setStatus({ state: "sending", text: "Slanje..." });
 
-      // ✅ OPCIJA A: Formspree (najlakše) — zameni URL svojim endpointom
-      // https://formspree.io/ -> napravi formu i dobićeš URL
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      await fetch("/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({ name, email, message }),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "contact",
+          name,
+          email,
+          message,
+        }),
       });
-
-      if (!res.ok) throw new Error("Submit failed");
 
       setStatus({ state: "success", text: "Hvala! Poruka je poslata." });
       setName("");
@@ -66,11 +64,28 @@ export default function Contact() {
 
   return (
     <div className="contact_layout">
+      {/* Netlify hidden input */}
+      <input type="hidden" name="form-name" value="contact" />
+      <p style={{ display: "none" }}>
+        <label>
+          Don’t fill this out: <input name="bot-field" />
+        </label>
+      </p>
+      {/* Netlify hidden input */}
       <h1>{t("Contact.naslov") ?? "Contact"}</h1>
-      <form className="contact_form" onSubmit={handleSubmit} noValidate>
+      <form
+        className="contact_form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+        noValidate
+      >
         <div className="contact_row_2">
           <ClassicInput
             label="Name"
+            name={"name"}
             placeholder="Enter your name"
             type="text"
             value={name}
@@ -82,6 +97,7 @@ export default function Contact() {
           <ClassicInput
             label="Email"
             placeholder="Enter your email"
+            name={"email"}
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -94,6 +110,7 @@ export default function Contact() {
           label="Message"
           placeholder="Write your message..."
           value={message}
+          name={"message"}
           onChange={(e) => setMessage(e.target.value)}
           error={touched.message && !!errors.message}
           errorMessage={touched.message ? errors.message : ""}
