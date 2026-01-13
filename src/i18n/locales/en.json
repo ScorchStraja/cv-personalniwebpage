@@ -19,5 +19,9 @@
   },
   "Contact":{
     "naslov":"Contact"
+  },
+  "Email":{
+    "naslov": "Portfolio inquiry",
+    "body":" Hello Strahinja \n, I found your portfolio and I'd like to get in touch. \n"
   }
 }

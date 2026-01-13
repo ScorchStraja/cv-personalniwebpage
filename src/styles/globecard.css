@@ -1,0 +1,106 @@
+.globe_card {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+
+  background: color-mix(in srgb, var(--surface) 88%, var(--bg));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.globe_wrap {
+  display: grid;
+  position: absolute;
+  inset: 0;
+  place-items: center;
+}
+
+.globe_wrap canvas {
+  filter:
+    drop-shadow(0 0 14px var(--surface))
+    drop-shadow(0 0 34px black); 
+}
+
+
+.globe_overlay {
+    display: none;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+
+  background:
+    /* darken center */
+    radial-gradient(
+      420px 320px at 60% 58%,
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.35) 38%,
+      rgba(0,0,0,0.10) 64%,
+      transparent 78%
+    ),
+    /* bright rim / fog near edge */
+    radial-gradient(
+      560px 420px at 60% 58%,
+      transparent 52%,
+      rgba(255,255,255,0.06) 66%,
+      rgba(255, 255, 255, 0.12) 76%,
+      rgba(167,139,250,0.16) 88%,
+      rgba(167,139,250,0.20) 100%,
+      transparent 100%
+    );
+
+  mix-blend-mode: screen;
+  filter: blur(0.5px);
+  opacity: 1;
+}
+
+.globe_topLeft {
+    display: none;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 5;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--surface) 65%, transparent);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  color: var(--text);
+  font-size: var(--text-sm);
+}
+
+.globe_pin {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 18px var(--glow-1);
+}
+
+.globe_label {
+  opacity: 0.92;
+}
+
+.globe_loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: color-mix(in srgb, var(--text) 70%, transparent);
+  font-size: var(--text-sm);
+}
+
+
+@media (min-width: 2000px) {
+  .globe_card {
+    height: 400px;
+  }
+}

@@ -1,28 +1,16 @@
 @import "./theme.css";
 
 html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
   font-family: var(--font-body);
-  background: var(--bg);
   color: var(--text);
-}
-
-body {
-  position: relative;
-  isolation: isolate;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background: var(--page-gradient);
-  filter: blur(14px);
-}
-
-.page{
-  z-index: 1;
+  background-color: var(--bg);              
+  background-image: var(--page-gradient); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;             
+  background-size: cover;
 }
 
 body::after {
@@ -32,14 +20,18 @@ body::after {
   pointer-events: none;
   z-index: 0;
 
-  background:
-    radial-gradient(
-      400px at var(--cursor-x) var(--cursor-y),
-      color-mix(in srgb, var(--accent-bg) 22%, transparent),
-      transparent 70%
-    );
-
+  background: radial-gradient(
+    400px at var(--cursor-x) var(--cursor-y),
+    color-mix(in srgb, var(--accent-bg) 16%, transparent),
+    transparent 70%
+  );
   transition: background 80ms linear;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
 }
 
 h1, h2, h3, p {
@@ -81,7 +73,7 @@ p {
   max-width: 65ch;
 }
 
-p + p {
+p+p {
   margin-top: var(--space-2);
 }
 

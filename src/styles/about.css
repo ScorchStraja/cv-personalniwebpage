@@ -62,6 +62,15 @@
   mask-repeat: no-repeat;
 }
 
+.about_mail{
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.about_mail:hover{
+ color: color-mix(in srgb, var(--accent) 80%, white 50%);
+}
+
 .about_socials {
   display: flex;
   gap: var(--space-3);

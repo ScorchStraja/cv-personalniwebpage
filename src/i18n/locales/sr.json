@@ -19,5 +19,9 @@
   },
   "Contact":{
     "naslov":"Kontakt"
+  },
+  "Email":{
+    "naslov": "Upit u vezi portfolija",
+    "body":"Zdravo Strahinja, \n, Video sam tvoj portfolio i želeo bih da stupimo u kontakt.\n"
   }
 }

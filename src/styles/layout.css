@@ -1,5 +1,4 @@
 .page {
-  background: var(--bg);
   color: var(--text);
 }
 
@@ -13,17 +12,16 @@
   display: grid;
   grid-template-columns: minmax(500px, 520px) 1fr;
   gap: clamp(24px, 6vw, 120px);
-  padding: 64px 0; 
+  padding: var(--top-offset) 0; 
 }
 
 .layout_about {
   position: sticky;
-  top: 80px;          
+  top: 40px;          
   align-self: start;  
   height: fit-content;
   padding: 24px;
 
-  /* height: calc(85vh - 64px); */
   overflow: hidden;
   display: flex;
 }
@@ -33,7 +31,6 @@
   overflow-y: auto;
   scrollbar-gutter: stable; 
 }
-
 
 @media (max-width: 900px) {
   .layout {
