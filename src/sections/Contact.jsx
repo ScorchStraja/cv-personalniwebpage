@@ -80,7 +80,6 @@ export default function Contact() {
         netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
         noValidate
-        netlify
       >
         {/* Netlify hidden input */}
         <input type="hidden" name="form-name" value="contact" />
