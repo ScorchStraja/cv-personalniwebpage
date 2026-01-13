@@ -3,6 +3,12 @@ import { useMemo, useState } from "react";
 import ClassicInput from "../components/ClassicInput";
 import "../styles/contact.css";
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default function Contact() {
   const { t } = useTranslation();
   const [name, setName] = useState("");
@@ -14,7 +20,7 @@ export default function Contact() {
     email: false,
     message: false,
   });
-  const [status, setStatus] = useState({ state: "idle", text: "" }); // idle | sending | success | error
+  const [status, setStatus] = useState({ state: "idle", text: "" });
 
   const errors = useMemo(() => {
     const e = {};
@@ -65,14 +71,6 @@ export default function Contact() {
 
   return (
     <div className="contact_layout">
-      {/* Netlify hidden input */}
-      <input type="hidden" name="form-name" value="contact" />
-      <p style={{ display: "none" }}>
-        <label>
-          Don’t fill this out: <input name="bot-field" />
-        </label>
-      </p>
-      {/* Netlify hidden input */}
       <h1>{t("Contact.naslov") ?? "Contact"}</h1>
       <form
         className="contact_form"
@@ -84,6 +82,14 @@ export default function Contact() {
         noValidate
         netlify
       >
+        {/* Netlify hidden input */}
+        <input type="hidden" name="form-name" value="contact" />
+        <p style={{ display: "none" }}>
+          <label>
+            Don’t fill this out: <input name="bot-field" />
+          </label>
+        </p>
+        {/* Netlify hidden input */}
         <div className="contact_row_2">
           <ClassicInput
             label="Name"
