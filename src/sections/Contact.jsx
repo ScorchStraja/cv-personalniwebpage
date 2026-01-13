@@ -82,6 +82,7 @@ export default function Contact() {
         netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
         noValidate
+        netlify
       >
         <div className="contact_row_2">
           <ClassicInput
