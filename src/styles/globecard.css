@@ -104,3 +104,9 @@
     height: 400px;
   }
 }
+
+@media (max-width: 900px) {
+    .globe_card{
+        width: 99%;
+    }
+}
