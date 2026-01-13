@@ -85,6 +85,8 @@ export default function Contact() {
         {/* Netlify hidden input */}
         <input type="hidden" name="form-name" value="contact" />
         <p style={{ display: "none" }}>
+          <input type="hidden" name="subject"
+           value="Nova portfolio poruka" />
           <label>
             Don’t fill this out: <input name="bot-field" />
           </label>
