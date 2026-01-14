@@ -4,24 +4,109 @@
     "titula": "Master Engineer in Electrical Engineering and Computer Science",
     "kratkiOpis": "Master engineer in electrical engineering and computer science with experience in software development and user interface design."
   },
-  "intro":{
+  "intro": {
     "paragraph1": "I’m a master engineer in electrical engineering and computer science with a strong interest in building well-structured software systems and thoughtfully designed user interfaces. I enjoy working across both frontend and backend, focusing on solutions that are reliable, clear, and carefully engineered from end to end.",
     "paragraph2": "My background has shaped a methodical approach to problem-solving, with an emphasis on structure, maintainability, and long-term clarity. I work comfortably with both client-side and server-side development, and I enjoy understanding how systems function as a whole — from data and logic to interface and interaction.",
     "paragraph3": "I’m particularly drawn to projects where engineering discipline meets clean, intentional design. Whether I’m working on application logic, APIs, or user-facing interfaces, I value consistency, performance, and attention to detail.",
     "paragraph4": "Outside of work, I enjoy spending time outdoors, walking, and exploring creative interests such as drawing, music, and 3D modeling. I value continuous learning, craftsmanship, and building things with care."
   },
-  "CV":{
+  "CV": {
     "download": "Download",
     "view": "View"
   },
-  "Skills":{
-    "naslov":"Technical Expertise"
+  "Skills": {
+    "naslov": "Technical Expertise"
   },
-  "Contact":{
-    "naslov":"Contact"
+  "Contact": {
+    "naslov": "Contact",
+    "body": "I usually respond within 24 hours. I’m open to freelance projects and long-term collaboration."
   },
-  "Email":{
+  "Experience": {
+    "naslov": "Experience",
+    "items": [
+      {
+        "period": "May 2025 — December 2025",
+        "role": "Engineer / Electrical Systems Inspection (Vessels & Floating Facilities)",
+        "company": "Authority for Determining Vessel Seaworthiness (Ministry of Construction, Transport and Infrastructure)",
+        "description": "I worked on inspecting and evaluating the safety and compliance of electrical systems on vessels and floating facilities...",
+        "bullets": [
+          "Inspection of vessel electrical systems and installations",
+          "Review of schematics and technical documentation, and verification of the as-built condition",
+          "Assessment of the safety and correctness of electrical equipment and power supply systems"
+        ],
+        "technologies": []
+      },
+      {
+        "period": "2023 — 2025",
+        "role": "Junior Full-Stack Developer",
+        "company": "ProSoft",
+        "description": "I worked on developing and maintaining business applications...",
+        "bullets": [
+          "Developed a WPF KDS (Kitchen Display System) application for real-time kitchen order display",
+          "Built WPF applications for table reservations and resource management (e.g., beach sunbed reservations)",
+          "Developed an Android application (Angular) for a dental clinic to manage patients and appointment scheduling",
+          "Implemented RESTful APIs for server communication (reservations, appointments, schedule overview)"
+        ],
+        "technologies": [
+          {
+            "name": "C#",
+            "link": "https://dotnet.microsoft.com/en-us/languages/csharp",
+            "hoverColor": "#2d71fa"
+          },
+          {
+            "name": "WPF",
+            "link": "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/",
+            "hoverColor": "#2d71fa"
+          },
+          {
+            "name": "SQL Server",
+            "link": "https://www.microsoft.com/en-us/sql-server/",
+            "hoverColor": "#1b6dbf"
+          },
+          {
+            "name": "Angular",
+            "link": "https://angular.io/",
+            "hoverColor": "#dd0031"
+          },
+          { "name": "REST API", "link": "https://en.wikipedia.org/wiki/REST", "hoverColor": "#000000" }
+        ]
+      },
+      {
+        "period": "2023 — 2023",
+        "role": "Software Developer Intern (while studying)",
+        "company": "ProSoft",
+        "description": "While studying, I joined real software projects and gained hands-on experience...",
+        "bullets": [],
+        "technologies": [
+          {
+            "name": "C#",
+            "link": "https://dotnet.microsoft.com/en-us/languages/csharp",
+            "hoverColor": "#2d71fa"
+          },
+          {
+            "name": "WPF",
+            "link": "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/",
+            "hoverColor": "#2d71fa"
+          },
+          {
+            "name": "SQL Server",
+            "link": "https://www.microsoft.com/en-us/sql-server/",
+            "hoverColor": "#1b6dbf"
+          }
+        ]
+      }
+    ]
+  },
+  "Email": {
     "naslov": "Portfolio inquiry",
-    "body":" Hello Strahinja \n, I found your portfolio and I'd like to get in touch. \n"
+    "body": " Hello Strahinja, \n \n I found your portfolio and I'd like to get in touch. \n"
+  },
+  "Input": {
+    "name": "Enter you name",
+    "email": "Enter your email",
+    "message": "Write your message..."
+  },
+  "Country": {
+    "country": "Serbia"
   }
 }

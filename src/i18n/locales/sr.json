@@ -18,10 +18,95 @@
     "naslov":"Tehnička stručnost"
   },
   "Contact":{
-    "naslov":"Kontakt"
+    "naslov":"Kontakt",
+    "body":"Uglavnom odgovaram u roku od 24 sata. Otvoren sam za freelance projekte i dugoročnu saradnju."
   },
+"Experience": {
+  "naslov": "Iskustvo",
+  "items": [
+    {
+      "period": "Maj 2025 — Decembar 2025",
+      "role": "Inženjer / Tehnička kontrola elektro sistema (brodovi i splavovi)",
+      "company": "Uprava za utvrđivanje sposobnosti brodova za plovidbu (Ministarstvo građevinarstva, saobraćaja i infrastrukture)",
+      "description": "Radio sam na proveri i ocenjivanju ispravnosti brodskih elektro sistema i elektro instalacija na splavovima. Fokus je bio na bezbednosti, usaglašenosti sa pravilnicima i tehničkoj dokumentaciji.",
+      "bullets": [
+        "Provera brodskih električnih sistema i instalacija",
+        "Analiza šema i tehničke dokumentacije i kontrola izvedenog stanja",
+        "Procena ispravnosti i bezbednosti elektro opreme i napajanja"
+      ],
+      "technologies": []
+    },
+    {
+      "period": "2023 — 2025",
+      "role": "Full-Stack Developer (Junior)",
+      "company": "ProSoft",
+      "description": "Radio sam na razvoju i održavanju poslovnih aplikacija, uključujući desktop rešenja i mobilne aplikacije. Učestvovao sam u razvoju funkcionalnosti od baze do UI-a, kao i u integracijama sa backend servisima.",
+      "bullets": [
+        "Razvoj WPF aplikacije KDS (Kitchen Display System) za prikaz porudžbina u kuhinji u realnom vremenu",
+        "Izrada WPF aplikacija za rezervaciju stolova i upravljanje resursima (npr. ležaljke na plaži)",
+        "Razvoj Android aplikacije (Angular) za stomatološku ordinaciju – pregled pacijenata i zakazivanje termina",
+        "Implementacija REST API servisa za razmenu podataka sa serverom (rezervacije, termini, pregled rasporeda)"
+      ],
+      "technologies": [
+        {
+          "name": "C#",
+          "link": "https://dotnet.microsoft.com/en-us/languages/csharp",
+          "hoverColor": "#2d71fa"
+        },
+        {
+          "name": "WPF",
+          "link": "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/",
+          "hoverColor": "#2d71fa"
+        },
+        {
+          "name": "SQL Server",
+          "link": "https://www.microsoft.com/en-us/sql-server/",
+          "hoverColor": "#1b6dbf"
+        },
+        {
+          "name": "Angular",
+          "link": "https://angular.io/",
+          "hoverColor": "#dd0031"
+        },
+        { "name": "REST API", "link": "https://en.wikipedia.org/wiki/REST", "hoverColor": "#000000" }
+      ]
+    },
+    {
+      "period": "2023 — 2023",
+      "role": "Intern / Junior Developer (u toku studija)",
+      "company": "ProSoft",
+      "description": "Tokom studija sam bio uključen u razvoj softverskih rešenja i upoznao se sa radom u timu, razvojnim procesima i realnim projektima. Fokus je bio na praktičnom radu i učenju kroz konkretne zadatke.",
+      "bullets": [],
+      "technologies": [
+        {
+          "name": "C#",
+          "link": "https://dotnet.microsoft.com/en-us/languages/csharp",
+          "hoverColor": "#2d71fa"
+        },
+        {
+          "name": "WPF",
+          "link": "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/",
+          "hoverColor": "#2d71fa"
+        },
+        {
+          "name": "SQL Server",
+          "link": "https://www.microsoft.com/en-us/sql-server/",
+          "hoverColor": "#1b6dbf"
+        }
+      ]
+    }
+  ]
+},
   "Email":{
     "naslov": "Upit u vezi portfolija",
-    "body":"Zdravo Strahinja, \n, Video sam tvoj portfolio i želeo bih da stupimo u kontakt.\n"
+    "body":"Zdravo Strahinja, \n \n Video sam tvoj portfolio i želeo bih da stupimo u kontakt.\n"
+  },
+  "Input":{
+    "name":"Unesite Vaše ime",
+    "email":"Unesite Vaš emajl",
+    "message":"Napišite vašu poruku..."
+  },
+  "Country":{
+    "country": "Srbija"
   }
 }

@@ -1,34 +1,55 @@
-.tech_skill {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-3);
-    justify-content: center;
-    line-height: 1;
+.tech_skill{
+  position: relative;
+  overflow: hidden;
 
-    padding: var(--space-1) var(--space-3);
-    border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  justify-content: center;
+  line-height: 1;
 
-    background: var(--surface);
-    border: 1px solid var(--border);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-md);
 
-    color: var(--text);
-    transition:
-        background-color 2s ease,
-        color 2s ease,
-        transform 0.15s ease;
+  background: var(--surface);
+  border: 1px solid var(--border);
 
-    text-decoration: none;
+  color: var(--text);
+  transition: transform 0.15s ease, color 2s ease;
+  text-decoration: none;
 }
 
-.tech_skill:hover {
-    background: var(--tech-hover, var(--accent));
-    color: var(--tech-hover-text, var(--text));
-    transform: scale(1.03);
+/* overlay gradient/boja */
+.tech_skill::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
 
-    transition:
-        background-color 0.12s ease,
-        color 0.12s ease,
-        transform 0.15s ease;
+  /* ovde može i gradient i boja */
+  background: var(--tech-hover, var(--accent));
+
+  opacity: 0;
+  transition: opacity 2s ease;   /* izlazak spor */
+  z-index: 0;
+}
+
+/* da sadržaj bude iznad overlaya */
+.tech_skill > *{
+  position: relative;
+  z-index: 1;
+}
+
+.tech_skill:hover{
+  transform: scale(1.03);
+  color: var(--tech-hover-text, var(--text));
+  transition: transform 0.15s ease, color 0.12s ease;
+}
+
+.tech_skill:hover::before{
+  opacity: 1;
+  transition: opacity 0.12s ease;  /* ulazak brz */
 }
 
 .tech_skill_icon {

@@ -44,3 +44,9 @@
   line-height: 1.6;
   color: var(--text);
 }
+
+.experience_technologies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}

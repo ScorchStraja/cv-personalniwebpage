@@ -73,6 +73,7 @@ export default function Contact() {
   return (
     <div className="contact_layout">
       <h1>{t("Contact.naslov") ?? "Contact"}</h1>
+      <h2>{t("Contact.body") ?? "I usually respond within 24 hours. I’m open to freelance projects and long-term collaboration."}</h2>
       <form
         className="contact_form"
         name="contact"
@@ -96,7 +97,7 @@ export default function Contact() {
           <ClassicInput
             label="Name"
             name={"name"}
-            placeholder="Enter your name"
+            placeholder={t("Input.name")}
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -106,7 +107,7 @@ export default function Contact() {
 
           <ClassicInput
             label="Email"
-            placeholder="Enter your email"
+            placeholder={t("Input.email")}
             name={"email"}
             type="email"
             value={email}
@@ -118,7 +119,7 @@ export default function Contact() {
 
         <ClassicInput
           label="Message"
-          placeholder="Write your message..."
+          placeholder={t("Input.message")}
           value={message}
           name={"message"}
           onChange={(e) => setMessage(e.target.value)}

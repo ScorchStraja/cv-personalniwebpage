@@ -30,7 +30,7 @@ export default function Skills() {
   return (
     <div className="skills">
       <div className="skills_header">
-        <h2>{t("Skills.naslov")}</h2>
+        <h1>{t("Skills.naslov")}</h1>
       </div>
       <div className="skills_content">
         <h3>Programming Languages</h3>

@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Globe from "react-globe.gl";
 import * as THREE from "three";
 import "../styles/globecard.css";
 
 export default function GlobeCard() {
+  const { t } = useTranslation();
   const globeRef = useRef(null);
   const wrapRef = useRef(null);
 
@@ -11,7 +13,7 @@ export default function GlobeCard() {
   const [ready, setReady] = useState(false);
 
   const myLocation = useMemo(() => ({ lat: 30.3814, lng: 23.3860 }), []); 
-  const label = "Zrenjanin, Serbia";
+  const label = "Zrenjanin, " + t("Country.country");
 
   useEffect(() => {
     if (!wrapRef.current) return;
@@ -37,7 +39,7 @@ export default function GlobeCard() {
   const points = useMemo(
     () => [
       { lat: myLocation.lat, lng: myLocation.lng, size: 0.55, color: "rgb(124, 58, 237);" },
-      { lat: myLocation.lat, lng: myLocation.lng, size: 1.05, color: "rgba(255, 255, 255, 0.2)" },
+      { lat: myLocation.lat, lng: myLocation.lng, size: 1.05, color: "rgba(255, 255, 255);" },
     ],
     [myLocation]
   );
@@ -163,7 +165,7 @@ useEffect(() => {
             globeMaterial={globeMat}
 
             showAtmosphere={false}
-            atmosphereColor="rgba(167,139,250,0.45)"
+            atmosphereColor="rgba(167,139,250)"
             atmosphereAltitude={0.02}
 
             // Pin
