@@ -8,12 +8,12 @@ export default function CvActions() {
   const isSr = i18n.language?.toLowerCase().startsWith("sr");
 
   const cvHref = isSr
-    ? "/CV_StrahinjaKarac_CV_SR.pdf"
-    : "/CV_StrahinjaKarac_CV_ENG.pdf";
+    ? "/СтрахињаКараћ_CV_SR.pdf"
+    : "/StrahinjaKarac_CV_ENG.pdf";
 
   const cvFileName = isSr
-    ? "CV_StrahinjaKarac_CV_SR.pdf"
-    : "CV_StrahinjaKarac_CV_ENG.pdf";
+    ? "СтрахињаКараћ_CV_SR.pdf"
+    : "StrahinjaKarac_CV_ENG.pdf";
 
   return (
     <div className="cv_actions">
