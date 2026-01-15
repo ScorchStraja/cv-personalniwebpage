@@ -31,7 +31,7 @@ export default function CvActions() {
 
       <a
         href={cvHref}
-        download
+        download={cvFileName}
         className="cv_btn"
       >
         {t("CV.download")}
