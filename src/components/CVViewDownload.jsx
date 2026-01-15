@@ -3,7 +3,17 @@ import { useTranslation } from "react-i18next";
 import { FiFileText } from "react-icons/fi";
 
 export default function CvActions() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const isSr = i18n.language?.toLowerCase().startsWith("sr");
+
+  const cvHref = isSr
+    ? "/CV_StrahinjaKarac_CV_SR.pdf"
+    : "/CV_StrahinjaKarac_CV_ENG.pdf";
+
+  const cvFileName = isSr
+    ? "CV_StrahinjaKarac_CV_SR.pdf"
+    : "CV_StrahinjaKarac_CV_ENG.pdf";
 
   return (
     <div className="cv_actions">
@@ -11,7 +21,7 @@ export default function CvActions() {
       Curriculum Vitae 
 
       <a
-        href="/CV_Strahinja_Karac.pdf"
+        href={cvHref}
         target="_blank"
         rel="noopener noreferrer"
         className="cv_btn"
@@ -20,7 +30,7 @@ export default function CvActions() {
       </a>
 
       <a
-        href="/CV_Strahinja_Karac.pdf"
+        href={cvHref}
         download
         className="cv_btn"
       >

@@ -14,14 +14,14 @@
   --glow-1: color-mix(in srgb, var(--accent) 18%, transparent);
   --glow-2: color-mix(in srgb, var(--accent) 8%, transparent);
   --page-gradient:
-    radial-gradient(900px 600px at 15% 10%,
-      color-mix(in srgb, var(--accent-bg) 16%, transparent),
+    radial-gradient(1200px 1200px at 15% 10%,
+      color-mix(in srgb, var(--accent-bg) 22%, transparent),
       transparent 70%),
-    radial-gradient(700px 500px at 85% 20%,
-      color-mix(in srgb, var(--accent-bg) 10%, transparent),
+    radial-gradient(900px 500px at 65% 20%,
+      color-mix(in srgb, var(--accent-bg) 22%, transparent),
       transparent 72%),
-    radial-gradient(900px 650px at 55% 105%,
-      color-mix(in srgb, var(--accent-bg) 8%, transparent),
+    radial-gradient(1200px 650px at 45% 105%,
+      color-mix(in srgb, var(--accent-bg) 32%, transparent),
       transparent 75%);
 
   --radius-sm: 0.5rem;

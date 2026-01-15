@@ -38,8 +38,7 @@ export default function GlobeCard() {
 
   const points = useMemo(
     () => [
-      { lat: myLocation.lat, lng: myLocation.lng, size: 0.55, color: "rgb(124, 58, 237);" },
-      { lat: myLocation.lat, lng: myLocation.lng, size: 1.05, color: "rgba(255, 255, 255);" },
+      { lat: myLocation.lat, lng: myLocation.lng, size: 0.65, color: "rgba(255, 255, 255);" },
     ],
     [myLocation]
   );

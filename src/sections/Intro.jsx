@@ -8,7 +8,6 @@ export default function Intro() {
       <p>{t("intro.paragraph1")}</p>
       <p>{t("intro.paragraph2")}</p>
       <p>{t("intro.paragraph3")}</p>
-      <p>{t("intro.paragraph4")}</p>
     </div>
   );
 }

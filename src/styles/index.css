@@ -66,11 +66,13 @@ h3 {
 
 p {
   font-family: var(--font-body);
-  font-size: var(--text-md);
+  font-size: 18px;
+  /* font-size: var(--text-md); */
   font-weight: var(--weight-regular);
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.4;
   max-width: 65ch;
+  text-align: justify;
 }
 
 p+p {
