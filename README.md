@@ -1,14 +1,47 @@
-Sta jos treba da uradim:
-1. Prevedi sve reci en/sr
-2. ~~Napravi da poruka radi~~
-3. ~~Popraviti CV~~
-4. ~~Lepo ispuniti iskustva~~
-5. ~~Procitati dobro about (Pitati Anu)~~
-6. ~~Dodati neki opis ispod Contact?~~
-7. ~~Dodati onu kuglu, gde pise gde se nalazim na zamlji?~~
-8. ~~Ispod titule i opisa kratkog, dodati mail, adresu?~~
-9. ~~Dodati ispod titule i kratkog opisa linkove za auto scroll?~~ X
-10. Pogledati/pitati chatgpt da li bi trebao da dodam mozda jos neki gimmick ili slicno?
-11. ~~Napravi da na netlify radi skidanje cv-a.~~
-12. ~~Promeni sliku na tabu.~~
-13. ~~Linear boja na techskill se brzo vrati na staro, popraviti.~~
+# Personal Portfolio & CV Website
+
+This repository contains the source code for my personal portfolio and CV website.  
+The goal of this project is to present my skills, experience, and projects in a clean, modern, and responsive way.
+
+🔗 **Live website:**  
+https://strahinjakarac-portfolio.netlify.app/
+
+---
+
+## ✨ Features
+
+- Modern, responsive UI
+- Clean and minimal design
+- Fully static frontend (no backend, no APIs)
+- Optimized for desktop and mobile
+- Fast build and deployment
+
+---
+
+## 🛠 Tech Stack
+
+- **React**
+- **Vite**
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
+- **Netlify** (deployment)
+
+---
+
+## 🚀 Getting Started (Local Development)
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/ScorchStraja/cv-personalniwebpage.git
+
+# Navigate to the project folder
+cd cv-personalniwebpage
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
